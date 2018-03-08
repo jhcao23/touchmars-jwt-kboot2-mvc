@@ -1,0 +1,44 @@
+server:
+  port: 8080
+spring:
+  social:
+    facebook:
+      app-id: 1564824140411615
+      app-secret: bb96164ffa816c65fc14f82fae38c914
+    twitter:
+      app-id: yix4Ai9xDbWBKV3yFPFGs8Nkf
+      app-secret: 9rXtdeYe5v3wmGR5E96ubiXRDeWzZFgRt2ZYdgSKeQFivw0OtD
+  datasource:
+      url: jdbc:mysql://localhost:3306/touchmars_spring_template?autoReconnect=true&useSSL=false
+      username: root
+      password:
+      driver-class-name: com.mysql.jdbc.Driver
+  data:
+    jpa:      
+      repositories:
+        enabled: true        
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.spatial.dialect.mysql.MySQL56SpatialDialect
+#        enable_lazy_load_no_trans: true
+    show-sql: true
+    hibernate:      
+      naming:
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+      ddl-auto: none                  
+logging:
+  file: template.log
+  level:
+    org.springframework.social: TRACE
+    technology.touchmars.template: TRACE    
+    org.thymeleaf: TRACE
+    org.springframework.security: TRACE
+    org.springframework.security.web: TRACE
+    org.springframework.security.web.authentication: TRACE  
+    org.springframework.web.cors: TRACE  
+wechat:
+  mini:
+    e2eat:
+      app-id: wxc9213fff88a427f0
+      secret: 2e6bc5e65e470acf77d545d72ad61d4a     
