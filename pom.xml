@@ -2,11 +2,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>technology.touchmars</groupId>
-	<artifactId>touchmars-spring-template-kboot2-mvc-no-social</artifactId>
-	<version>2.0.0-SNAPSHOT</version>
+	<artifactId>touchmars-spring-template-kboot2-mvc</artifactId>
+	<version>2.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>touchmars-spring-template-kboot2-mvc-no-social</name>
+	<name>touchmars-spring-template-kboot2-mvc</name>
 	<description>Touch Mars Solutions::
         provide template for Spring Boot2 MVC and Kotlin based project without Social dependencies
     </description>

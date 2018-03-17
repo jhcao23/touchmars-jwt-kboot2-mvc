@@ -1,3 +1,5 @@
+- 2.0.1-SNAPSHOT: Add `ContactRepository` and `UserContactRepository`.
+- 2.0.0-SNAPSHOT [NEW]: Change project id to `touchmars-spring-template-kboot2-mvc`.
 - 2.0.0-SNAPSHOT: Upgrade Spring Boot to `2.0.0.RELEASE`; Change from Java to Kotlin; remove social dependencies.
 - 0.0.21-SNAPSHOT: Upgrade kotlin to 1.2.30.
 - 0.0.20-SNAPSHOT: Upgrade kotlin to 1.2.21. Upgrade Spring Boot to 1.5.10.

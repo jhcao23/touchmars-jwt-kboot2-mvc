@@ -17,7 +17,7 @@ public class UserContact {
     @GenericGenerator(name = "native", strategy = "native")
     private Long id;
 
-    @ManyToOne(optional = false, cascade = CascadeType.PERSIST, fetch = FetchType.LAZY, targetEntity = Contact.class)
+    @ManyToOne(optional = false, cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.LAZY, targetEntity = Contact.class)
     @JoinColumn(name = "Contact_Id", referencedColumnName = "ID")
     private Contact contact;
 
