@@ -21,7 +21,7 @@
 		<maven.compiler.target>${java.version}</maven.compiler.target>
 		<spring-boot.version>2.0.2.RELEASE</spring-boot.version>
 		<spring-cloud.version>Edgware.SR3</spring-cloud.version>
-		<spring-io.version>Cairo-SR1</spring-io.version>
+		<!--<spring-io.version>Cairo-SR1</spring-io.version>-->
 		<javax.interceptor-api.version>1.2.2</javax.interceptor-api.version>
 		<spring-data.version>Kay-SR7</spring-data.version>
 		<swagger-core-version>1.5.19</swagger-core-version>
