@@ -6,4 +6,5 @@ import technology.touchmars.template.model.Contact;
 
 @Repository
 public interface ContactRepository extends JpaRepository<Contact, Long> {
+
 }

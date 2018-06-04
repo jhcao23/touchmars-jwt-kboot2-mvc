@@ -38,7 +38,7 @@ public class Contact extends AuditableBaseEntity {
     private String avatar;
 
     @OneToMany(cascade = CascadeType.ALL, targetEntity = UserContact.class, mappedBy = "contact")
-    private List<UserContact> contacts;
+    private List<UserContact> userContacts;
 
 
 
