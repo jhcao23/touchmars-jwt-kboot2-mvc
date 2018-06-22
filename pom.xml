@@ -3,7 +3,7 @@
 
 	<groupId>technology.touchmars</groupId>
 	<artifactId>touchmars-spring-template-kboot2-mvc</artifactId>
-	<version>2.0.2-SNAPSHOT</version>
+	<version>2.0.3-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>touchmars-spring-template-kboot2-mvc</name>
@@ -15,11 +15,11 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<kotlin.version>1.2.41</kotlin.version>
+		<kotlin.version>1.2.50</kotlin.version>
 		<kotlin.compiler.incremental>true</kotlin.compiler.incremental>
 		<maven.compiler.source>${java.version}</maven.compiler.source>
 		<maven.compiler.target>${java.version}</maven.compiler.target>
-		<spring-boot.version>2.0.2.RELEASE</spring-boot.version>
+		<spring-boot.version>2.0.3.RELEASE</spring-boot.version>
 		<spring-cloud.version>Edgware.SR3</spring-cloud.version>
 		<!--<spring-io.version>Cairo-SR1</spring-io.version>-->
 		<javax.interceptor-api.version>1.2.2</javax.interceptor-api.version>

@@ -1,3 +1,4 @@
+- 2.0.3-SNAPSHOT: Upgrade versions: boot and kotlin.
 - 2.0.2-SNAPSHOT: Upgrade versions: boot, spring-io, spring-cloud, spring-data, swagger, command-text, common-lang
 - 2.0.1-SNAPSHOT: Add `ContactRepository` and `UserContactRepository`.
 - 2.0.0-SNAPSHOT [NEW]: Change project id to `touchmars-spring-template-kboot2-mvc`.
