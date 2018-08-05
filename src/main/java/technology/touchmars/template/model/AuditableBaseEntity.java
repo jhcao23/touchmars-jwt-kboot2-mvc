@@ -7,8 +7,10 @@ import org.springframework.data.annotation.LastModifiedBy;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
-import javax.persistence.*;
-import java.time.ZonedDateTime;
+import javax.persistence.Column;
+import javax.persistence.EntityListeners;
+import javax.persistence.MappedSuperclass;
+import java.time.Instant;
 
 @Data
 @MappedSuperclass
@@ -18,7 +20,7 @@ public class AuditableBaseEntity {
 	@LastModifiedDate
     @Column(name = "modified_dt")
 //    @Temporal(TemporalType.TIMESTAMP)
-    private ZonedDateTime modifiedDt;
+    private Instant modifiedDt;
 
 	@LastModifiedBy
     @Column(name = "modified_by")
@@ -27,7 +29,7 @@ public class AuditableBaseEntity {
     @CreatedDate
     @Column(name = "created_dt")
 //    @Temporal(TemporalType.TIMESTAMP)
-    private ZonedDateTime createdDt;
+    private Instant createdDt;
 
     @CreatedBy
     @Column(name = "created_by")    

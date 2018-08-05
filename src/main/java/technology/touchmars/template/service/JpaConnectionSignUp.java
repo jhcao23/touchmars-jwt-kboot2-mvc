@@ -21,11 +21,11 @@ public class JpaConnectionSignUp  {
 		user.setHashId(hashId);
 		//add ROLE_USER
 		if(roles==null) {
-			Authority authority = authorityRepository.getOne(Authority.ID_ROLE_USER);
+			Authority authority = authorityRepository.findById(Authority.ID_ROLE_USER).orElse(null);
 			user.addAuthority(authority);
 		}else {
 			for(Integer role: roles) {
-				Authority authority = authorityRepository.getOne(role);
+				Authority authority = authorityRepository.findById(role).orElse(null);
 				user.addAuthority(authority);
 			}
 		}

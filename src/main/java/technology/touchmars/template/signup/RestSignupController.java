@@ -92,7 +92,7 @@ public class RestSignupController {
 			else
 				return ResponseEntity.badRequest().body(error);
 		}
-		Authority authority = authorityRepository.getOne(Authority.ID_ROLE_USER);
+		Authority authority = authorityRepository.findById(Authority.ID_ROLE_USER).orElse(null);
 		try {			
 			TouchUser user = createUser(form, formBinding, authority);
 			//successfully created a User

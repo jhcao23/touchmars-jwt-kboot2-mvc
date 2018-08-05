@@ -77,7 +77,7 @@ public class GoogleServerSideAppAuthenticationFilter extends AbstractAuthenticat
         this.setAuthenticationFailureHandler(new SimpleRestFailureHandler());
 		this.setAuthenticationSuccessHandler(new JwtAuthenticationSuccessHandler(userRepository, jwtTokenService, jwtClaimService));
 	}
-	
+
 	@Override
 	public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response)
 			throws AuthenticationException, IOException, ServletException {

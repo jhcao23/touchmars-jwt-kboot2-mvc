@@ -92,7 +92,7 @@ public class JwtUsernamePasswordSignupFilter extends AbstractAuthenticationProce
 
     private TouchUser createUser(SignupForm form) {
         try {
-            Authority authority = this.authorityRepository.getOne(Authority.ID_ROLE_USER);
+            Authority authority = this.authorityRepository.findById(Authority.ID_ROLE_USER).orElse(null);
             TouchUser user = new TouchUser();
             user.assembleUser(form.getUsername(), form.getPassword(), form.getFirstName(), form.getLastName());
             user.addAuthority(authority);

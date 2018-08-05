@@ -17,7 +17,7 @@ public class ConnectionAttributes extends AuditableBaseEntity implements Connect
 	@Column(nullable = false, name="provider_user_id")
 	private String providerUserId;
 	
-	@Column(nullable = false, name="rank")
+	@Column(nullable = false, name="ranking")
 	private Integer rank = 0;		
 	//TODO: + appName
 	

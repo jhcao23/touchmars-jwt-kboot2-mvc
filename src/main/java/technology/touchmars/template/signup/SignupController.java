@@ -74,7 +74,7 @@ public class SignupController {
 			response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
 			return error;
 		}
-		Authority authority = authorityRepository.getOne(Authority.ID_ROLE_USER);
+		Authority authority = authorityRepository.findById(Authority.ID_ROLE_USER).orElse(null);
 		TouchUser user = createUser(form, formBinding, authority);
 		if (user != null) {
 			SecurityContextHolder.getContext().setAuthentication(

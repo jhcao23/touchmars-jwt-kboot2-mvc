@@ -1,3 +1,6 @@
+- 2.3.0-SNAPSHOT: Update a few versions. Change `getOne` to `findById`.
+- 2.1.1-SNAPSHOT: Upgrade `kotlin` to `1.2.60`.
+- 2.1.0-SNAPSHOT: Upgrade version: `Spring Cloud` and `spring-cloud-starter-openfeign`.
 - 2.0.3-SNAPSHOT: Upgrade versions: boot and kotlin.
 - 2.0.2-SNAPSHOT: Upgrade versions: boot, spring-io, spring-cloud, spring-data, swagger, command-text, common-lang
 - 2.0.1-SNAPSHOT: Add `ContactRepository` and `UserContactRepository`.
