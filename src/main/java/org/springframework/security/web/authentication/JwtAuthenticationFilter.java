@@ -63,6 +63,7 @@ public class JwtAuthenticationFilter extends GenericFilterBean {
 			        		if(touchUser0.isPresent()) {
 				        		SecurityContextHolder.getContext().setAuthentication(
 				        			new UsernamePasswordAuthenticationToken(touchUser0.get(), null, grantedAuthorityList)
+//									new UsernamePasswordAuthenticationToken(hashId, null, grantedAuthorityList)
 				        		);
 			        		} else {
 			        			response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);

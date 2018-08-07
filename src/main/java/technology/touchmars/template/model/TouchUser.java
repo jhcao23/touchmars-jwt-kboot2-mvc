@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
 import org.hibernate.annotations.GenericGenerator;
+import org.springframework.security.core.AuthenticatedPrincipal;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import technology.touchmars.template.service.GenerateUniqueKey;
 
@@ -22,7 +23,7 @@ import java.util.stream.Collectors;
 @ToString(exclude= {"userConnectionList", "userConnectionWechatList"})
 @Entity
 @Table(name = "Touch_User")
-public class TouchUser extends AuditableBaseEntity  {
+public class TouchUser extends AuditableBaseEntity implements AuthenticatedPrincipal {
 
     @Column(name = "id", nullable = false)
     @Id 
@@ -129,10 +130,9 @@ public class TouchUser extends AuditableBaseEntity  {
 	public boolean hasRole(Integer roleId) {
 		return this.userAuthorityCollection.stream().anyMatch(a -> a.getAuthority().getId().equals(roleId) );
 	}
-	
 
 	@Transient
-//	@Override
+	@Override
 	public String getName() {
 		return this.hashId;
 	}

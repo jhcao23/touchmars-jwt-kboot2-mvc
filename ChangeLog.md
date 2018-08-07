@@ -1,3 +1,5 @@
+- 2.3.1-SNAPSHOT: Temporarily fixed `TouchMarsAuditorAwareImpl` issue as it was returning `TouchUser.toString` by
+    make `TouchUser implements AuthenticatedPrincipal`.
 - 2.3.0-SNAPSHOT: Update a few versions. Change `getOne` to `findById`.
 - 2.1.1-SNAPSHOT: Upgrade `kotlin` to `1.2.60`.
 - 2.1.0-SNAPSHOT: Upgrade version: `Spring Cloud` and `spring-cloud-starter-openfeign`.

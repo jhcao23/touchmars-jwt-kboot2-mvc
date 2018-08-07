@@ -5,7 +5,6 @@ package technology.touchmars.template.model;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.ToString;
 import org.hibernate.annotations.Immutable;
 import org.hibernate.annotations.NaturalId;
 
@@ -13,7 +12,7 @@ import javax.persistence.*;
 
 @Data
 @EqualsAndHashCode(callSuper=false)
-@ToString
+//@ToString
 @Entity
 @Table(name = "Authority")
 @Immutable

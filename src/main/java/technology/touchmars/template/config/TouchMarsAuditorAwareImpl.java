@@ -18,7 +18,8 @@ public class TouchMarsAuditorAwareImpl implements AuditorAware<String> {
 //		    return ((UsernamePasswordAuthenticationToken)authentication).getName();
 //        }
 //		return ((TouchUser)authentication.getPrincipal()).getHashId();
-        return Optional.of(authentication.getName());
+		String name = authentication.getName();
+        return Optional.of(name);
 	}
 
 }
