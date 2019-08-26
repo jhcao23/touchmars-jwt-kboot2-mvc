@@ -1,3 +1,4 @@
+- 3.0.0-SNAPSHOT: Upgrade major versions.
 - 2.3.1-SNAPSHOT: Temporarily fixed `TouchMarsAuditorAwareImpl` issue as it was returning `TouchUser.toString` by
     make `TouchUser implements AuthenticatedPrincipal`.
 - 2.3.0-SNAPSHOT: Update a few versions. Change `getOne` to `findById`.
