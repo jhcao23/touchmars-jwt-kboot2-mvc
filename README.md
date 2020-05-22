@@ -1,7 +1,10 @@
 # Spring Boot 2 Template (Partially done esp. kotlin part) 
-1. The project uses `Spring Security 5`ß (MVC only, webflux version will roll into next edition)
-    and JWT based on `Filter`, as a standard methodology, to handle the authentication.
-2. The project now is written in Java but should use kotlin - kotlin version will replace Java later.
+1. The project uses `Spring Security 5` (MVC only, webflux version will roll into next edition)
+    to provide a fashioned JWT based Authentication framework based on Spring Boot2 and Sprint Security 5 with MVC 
+    - JWT based on `Filter`, as a standard methodology, to handle the authentication.
+    - JWT integrated with social platform such as facebook, twitter, wechat is also provided.
+    - `UserDetailsService` is implemented by `Spring Data Jpa` and `Hibernate`.   		.
+2. The project is now written in Java but should use kotlin - kotlin version will replace Java soon.
 3. It has some dependencies such as `wechat-client-mini-kboot2` to handle special/variant 3rd party OAuth2 authentications. 
 4. The project has removed dependency on old `spring-social` project.
 5. TODO: versions updates.

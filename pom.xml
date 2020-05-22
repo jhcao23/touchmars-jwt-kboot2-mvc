@@ -7,7 +7,8 @@
 	<packaging>jar</packaging>
 
 	<name>touchmars-spring-template-kboot2-mvc</name>
-	<description>Touch Mars Solutions::provide a fashioned JWT based Authentication framework based on Spring Boot2 and MVC in kotlin to replace Java (soon).
+	<description>Touch Mars Solutions::provide a fashioned JWT based Authentication framework based on Spring Boot2 and Sprint Security 5 with MVC in kotlin to replace Java (soon).
+		UserDetailsService is implemented by Spring Data Jpa and Hibernate.
     </description>
 
 	<properties>
