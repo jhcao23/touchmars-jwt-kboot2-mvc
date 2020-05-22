@@ -3,15 +3,15 @@ server:
 spring:
   social:
     facebook:
-      app-id: 1564824140411615
-      app-secret: bb96164ffa816c65fc14f82fae38c914
+      app-id:
+      app-secret:
     twitter:
-      app-id: yix4Ai9xDbWBKV3yFPFGs8Nkf
-      app-secret: 9rXtdeYe5v3wmGR5E96ubiXRDeWzZFgRt2ZYdgSKeQFivw0OtD
+      app-id:
+      app-secret:
   datasource:
-      url: jdbc:mysql://localhost:3306/touchmars_spring_template?autoReconnect=true&useSSL=false
-      username: root
-      password:
+      url: jdbc:mysql://localhost:3306/touchmars_spring_template?autoReconnect=true&useSSL=false&serverTimezone=PST8PDT&verifyServerCertificate=false
+      username: spring
+      password: spring
       driver-class-name: com.mysql.jdbc.Driver
   data:
     jpa:      
@@ -39,6 +39,6 @@ logging:
     org.springframework.web.cors: TRACE  
 wechat:
   mini:
-    e2eat:
-      app-id: wxc9213fff88a427f0
-      secret: 2e6bc5e65e470acf77d545d72ad61d4a     
+    SomeApp:
+      app-id:
+      secret:

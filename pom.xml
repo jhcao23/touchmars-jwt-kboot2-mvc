@@ -7,7 +7,7 @@
 	<packaging>jar</packaging>
 
 	<name>touchmars-spring-template-kboot2-mvc</name>
-	<description>Touch Mars Solutions::provide template for Spring Boot2 MVC and Kotlin based project without Social dependencies
+	<description>Touch Mars Solutions::provide a fashioned JWT based Authentication framework based on Spring Boot2 and MVC in kotlin to replace Java (soon).
     </description>
 
 	<properties>

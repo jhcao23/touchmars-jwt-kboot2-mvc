@@ -1,3 +1,5 @@
+- Exception `Caused by: com.mysql.cj.exceptions.CJException: Public Key Retrieval is not allowed` is temporarily removed by rewriting jdbc connection url by appending `&verifyServerCertificate=false`.
+  [This post](https://community.atlassian.com/t5/Confluence-questions/MySQL-Public-Key-Retrieval-is-not-allowed/qaq-p/778956) is helpful.
 - rank is a sensitive keyword in new MySQL database.
 - Spring Data JPA `getOne` returns a reference so might cause Hibernate LazyInitializationException.
 - Hibernate only supports up to 1 eager loading List, 
