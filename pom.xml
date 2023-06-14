@@ -29,7 +29,7 @@
 
 		<swagger-core.version>2.0.9</swagger-core.version>
 		<jjwt.version>0.10.7</jjwt.version>
-        <guava.version>29.0-jre</guava.version>
+        <guava.version>32.0.0-jre</guava.version>
         <google-api-client.version>1.30.2</google-api-client.version>
 		<google-api-services-drive.version>v3-rev173-1.25.0</google-api-services-drive.version>
 		<firebase.version>6.9.0</firebase.version>
