@@ -34,7 +34,7 @@
 		<google-api-services-drive.version>v3-rev173-1.25.0</google-api-services-drive.version>
 		<firebase.version>6.9.0</firebase.version>
         <commons-lang.version>3.9</commons-lang.version>
-        <commons-text.version>1.7</commons-text.version>
+        <commons-text.version>1.10.0</commons-text.version>
 	</properties>
 
 	<dependencies>
